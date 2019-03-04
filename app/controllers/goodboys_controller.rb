@@ -1,0 +1,2 @@
+class GoodboysController < ApplicationController
+end
