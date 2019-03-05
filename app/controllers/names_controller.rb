@@ -3,5 +3,6 @@ class NamesController < ApplicationController
     end
 
     def index
+    @test = Name.first
     end
 end

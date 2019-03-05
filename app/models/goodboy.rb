@@ -1,0 +1,2 @@
+class Goodboy < ApplicationRecord
+end
