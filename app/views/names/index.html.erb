@@ -1,1 +1,13 @@
-<%= @test.name %>
+
+<h1>List Of All Names</h1>
+<table class="table table-dark">
+    <tr>
+        <th>Name</th>
+    </tr>
+
+<% @test.each do |name| %>
+    <tr>
+    <td><%= name.name %><td>
+    </tr>
+  <% end %>
+
