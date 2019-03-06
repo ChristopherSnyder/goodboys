@@ -3,5 +3,6 @@ class SnacksController < ApplicationController
     end
 
     def index
+    @snack = Snack.all
     end
 end

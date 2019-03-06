@@ -1,1 +1,13 @@
-<h1> Here be Snackeroos</h1>
+
+<h1>List Of All Snacks</h1>
+<table class="table table-dark">
+    <tr>
+        <th>Snack</th>
+    </tr>
+
+<% @snack.each do |snack| %>
+    <tr>
+    <td><%= snack.name %><td>
+    </tr>
+  <% end %>
+
