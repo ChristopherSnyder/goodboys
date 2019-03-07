@@ -2,16 +2,12 @@
 <table class="table table-dark">
     <tr>
         <th>Name</th>
-        <th>Breed</th>
-        <th>Favourite Snack</th>
     </tr>
 
 <% @goodboy.each do |goodboy| %>
-    <tr>
     <td><%= goodboy.name %></td>
-    <td><%= goodboy.breed %></td>
-    <td><%= goodboy.snack %></td>
+    <td><%= link_to 'Show More', goodboy_path(goodboy.id) %></td>
     </tr>
   <% end %>
-
   <%= paginate @goodboy %>
+
