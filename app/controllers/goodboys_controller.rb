@@ -3,5 +3,6 @@ class GoodboysController < ApplicationController
     end
 
     def index
+        @goodboy = Goodboy.all
     end
 end

@@ -39,9 +39,9 @@ for i in 0..99
     newbreed = Breed.offset(rand(Breed.count)).first
     newsnack = Snack.offset(rand(Snack.count)).first
 
-    newgoodboy.name = newname
-    newgoodboy.breed = newbreed
-    newgoodboy.snack = newsnack
+    newgoodboy.name = newname.name
+    newgoodboy.breed = newbreed.name
+    newgoodboy.snack = newsnack.name
 
     newgoodboy.save
 
