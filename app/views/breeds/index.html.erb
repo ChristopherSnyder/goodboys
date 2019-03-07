@@ -1,4 +1,11 @@
-<% @dogs.each do |feature| %>
-    <%= feature[0] %>
-    <br>
+<h1>List Of All Breeds</h1>
+<table class="table table-dark">
+    <tr>
+        <th>Breed</th>
+    </tr>
+
+<% @breed.each do |breed| %>
+    <tr>
+    <td><%= breed.name %><td>
+    </tr>
   <% end %>
