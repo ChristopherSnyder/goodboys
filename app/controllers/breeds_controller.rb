@@ -7,7 +7,7 @@ class BreedsController < ApplicationController
     end
 
     def index
-        @breed = Breed.all
+        @breed = Breed.order(:name).page params[:page]
     end
 
 end

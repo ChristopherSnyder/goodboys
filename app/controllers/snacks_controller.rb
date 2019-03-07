@@ -3,6 +3,6 @@ class SnacksController < ApplicationController
     end
 
     def index
-    @snack = Snack.all
+    @snack = Snack.order(:name).page params[:page]
     end
 end

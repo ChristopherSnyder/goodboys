@@ -3,6 +3,6 @@ class NamesController < ApplicationController
     end
 
     def index
-    @name = Name.all
+    @name = Name.order(:name).page params[:page]
     end
 end

@@ -3,6 +3,6 @@ class GoodboysController < ApplicationController
     end
 
     def index
-        @goodboy = Goodboy.all
+        @goodboy = Goodboy.order(:name).page params[:page]
     end
 end
